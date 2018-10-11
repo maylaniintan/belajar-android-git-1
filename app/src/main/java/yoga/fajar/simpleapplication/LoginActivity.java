@@ -46,6 +46,8 @@ public class LoginActivity extends AppCompatActivity  {
     PreferencesHelper instance;
     private EditText name;
     private EditText email;
+    private Button button;
+    private String KEY_NAME = "NAMA";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +58,10 @@ public class LoginActivity extends AppCompatActivity  {
 
         name = (EditText) findViewById(R.id.etNama);
         email = (EditText) findViewById(R.id.etEmail);
-
+        button = (Button) findViewById(R.id.button);
     }
-    public void Login (View view) {
 
+    public void Login (View view) {
         String n = name.getText().toString();
         String e = email.getText().toString();
         Toast.makeText(getApplicationContext(),"Succes Login",Toast.LENGTH_SHORT).show();
@@ -67,7 +69,10 @@ public class LoginActivity extends AppCompatActivity  {
         instance.setName(n);
 
         Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+        intent.putExtra(KEY_NAME, n);
         startActivity(intent);
     }
+
+
 }
 

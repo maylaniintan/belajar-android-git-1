@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="yoga.fajar.simpleapplication.Main2Activity">
+    tools:context="yoga.fajar.simpleapplication.pindahActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity"/>
+        android:text="@string/textactivity"/>
 
 </RelativeLayout>
