@@ -9,7 +9,7 @@
     <string name="hello_fragment1">Hallo ini dari fragment 1</string>
     <string name="hello_fragment2">Hallo ini dari fragment 2</string>
     <string name="adduser">add user</string>
-    <string name="userlist">User List</string>
+    <string name="listuser">List User</string>
     <string name="frg1">Fragment 1</string>
     <string name="frg2">Fragment 2</string>
     <string name="textactivity">Ini dari activity lain</string>
